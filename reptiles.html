@@ -189,16 +189,16 @@ nav li {
 
     <div class="animal-section">
       <h3>Loggerhead Sea Turtle</h3>
-      <p><strong>Why do they migrate?</strong> Loggerhead sea turtles migrate for reproduction. They return to their natal beaches to lay eggs.</p>
+      <p><strong>Why do they migrate?</strong> Loggerhead sea turtles migrate primarily to find food, reach breeding grounds, and to navigate to their natal nesting beaches</p>
       <p><strong>Information:</strong> These turtles can travel thousands of miles across oceans using Earth’s magnetic fields to navigate. Migration cycles align with temperature and seasonal currents.</p>
       <a class="popup-link" href="#" onclick="openModal('logturtleModal')">See the sinusoidal function of their migration</a>
     </div>
 
     <div class="animal-section">
-      <h3>Northern Brown Snake</h3>
+      <h3>Green Sea Turtle</h3>
       <p><strong>Why do they migrate?</strong> These snakes migrate short distances to find overwintering sites or return to summer habitats.</p>
       <p><strong>Information:</strong> Their movement is influenced by seasonal temperature changes and humidity. They're most active during warmer months.</p>
-      <a class="popup-link" href="#" onclick="openModal('snakeModal')">See the sinusoidal function of their migration</a>
+      <a class="popup-link" href="#" onclick="openModal('sturtleModal')">See the sinusoidal function of their migration</a>
     </div>
 
     <div class="animal-section">
@@ -208,21 +208,21 @@ nav li {
       <a class="popup-link" href="#" onclick="openModal('tortoiseModal')">See the sinusoidal function of their migration</a>
     </div>
 
-  <div id="whaleModal" class="modal">
+  <div id="logturtleModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal('whaleModal')">&times;</span>
-        <h4>Sinusoidal Migration of Emperor Penguins</h4>
+        <span class="close" onclick="closeModal('logturtleModal')">&times;</span>
+        <h4>Sinusoidal Migration of Atlantic Loggerhead Sea Turtles</h4>
         <div class="graph-container">
-          <img src="./images/stylish_humpback_graph.png" alt="Humpback Whale Migration Graph" class="side-by-side">
-          <img src="./images/sinusoidal_migration_path_longitude.png" alt="Humpback Whale Migration Graph" class="side-by-side">
+          <img src="./images/loglat.png" alt="Loggerhead Sea Turtle Migration Graph" class="side-by-side">
+          <img src="./images/loglon.png" alt="Loggerhead Sea Turtle Migration Graph" class="side-by-side">
         </div>
         <p class="graph-explanation">
-          The sinusoidal models tracks the latitudinal and longitudinal migration of North Atlantic Humpback Whales throughout the year.  
+          The sinusoidal models tracks the latitudinal and longitudinal migration of Atlantic Loggerhead Sea Turtles throughout the year.  
           <br><br>
-          <strong>Latitude Function:</strong> <code>-20cos((π/6)x) + 40</code><br></n>
-          <strong>Longitude Function:</strong> <code>18cos((π/6)x) + 60</code>
+          <strong>Latitude Function:</strong> <code>-3cos((π/6)x) + 27</code><br></n>
+          <strong>Longitude Function:</strong> <code>-7.5cos((π/6)x) - 72.5</code>
           <br><br>
-          These equations represent two cycles of annual movement — from breeding grounds in the Caribbean (low latitude, high longitude) to feeding grounds near Greenland (high latitude, low longitude), then back again.
+          Atlantic loggerhead sea turtles start their year in warm climates like Mexico where they spend time feeding and preparing for migration. Then, when the temperature starts rising, they migrate further north to areas like Florida. Here, nesting season begins as these turtles lay their eggs. After the job is done, the turtles will return to their feeding grounds by the end of the year.
         </p>
       </div>
     </div>
@@ -257,25 +257,23 @@ nav li {
         overflow-wrap: break-word; /* Prevents overflow */
       }
     </style>
-       
-<!-- ... everything before this stays the same ... -->
 
     <!-- Wildebeest Modal -->
-    <div id="wildebeestModal" class="modal">
+    <div id="sturtleModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal('wildebeestModal')">&times;</span>
+        <span class="close" onclick="closeModal('sturtleModal')">&times;</span>
         <h4>Sinusoidal Migration of Hummingbirds</h4>
         <div class="graph-container">
-          <img src="./images/wildebeestlatitiude.png" alt="Wildebeest Latitude Graph" class="side-by-side">
-          <img src="./images/wildebeestlongitiude.png" alt="Wildebeest Longitude Graph" class="side-by-side">
+          <img src="./images/gsturtlelat.png" alt="Wildebeest Latitude Graph" class="side-by-side">
+          <img src="./images/gsturtlelon.png" alt="Wildebeest Longitude Graph" class="side-by-side">
         </div>
         <p class="graph-explanation">
-          The sinusoidal models track the latitudinal and longitudinal migration of the Wildebeest throughout the year.  
+          The sinusoidal models track the latitudinal and longitudinal migration of the Green Sea Turtle throughout the year.  
           <br><br>
-          <strong>Latitude Function:</strong> <code>-0.5cos((π/6)x) -2.5</code><br>
-          <strong>Longitude Function:</strong> <code>Almost No Change</code>
+          <strong>Latitude Function:</strong> <code>-5cos((π/6)x) + 5</code><br>
+          <strong>Longitude Function:</strong> <code>-3cos((π/6)x) + 89</code>
           <br><br>
-          Wildebeest start the year (x=0) at the Southern Serengeti. They migrate here each year to take advantage of the fresh grass that emerges during the rainy season, which also coincides with the calving season. During the summer season (x=6), they can be seen in the Northern Serengeti, in search of fresh grass and water yet again.
+          Contrary to Atlantic loggerheads, green sea turtles start the year in nesting season in areas like Playa Ostional in Costa Rica. Females lay eggs and bury them ashore, and once done, begin their migration back home. For them, home is the Galápagos feeding grounds during the summer, where their diet consists of seagrass and algae. At the end of the year, they will return once more to the nesting sites.
         </p>
       </div>
 
@@ -308,7 +306,7 @@ nav li {
       </style>
     </div>
 
-    <!-- Elephant Seal Modal -->
+    
     <div id="sealModal" class="modal">
       <div class="modal-content">
         <span class="close" onclick="closeModal('sealModal')">&times;</span>
