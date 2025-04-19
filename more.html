@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>More Topics | Math n' Migration</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('./images/ChatGPT Image Apr 9, 2025, 06_01_32 PM.png') no-repeat center center;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      color: #fce2bc;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background-color: #412a14;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      width: 70px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #f9ecd3;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+
+    nav ul li a:hover {
+      color: #b07527;
+    }
+
+    nav button {
+      padding: 8px 20px;
+      background-color: #e9d5b5;
+      border: none;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    nav button:hover {
+      background-color: #d6bfa4;
+    }
+
+    main {
+      padding: 60px 10%;
+      background-color: rgba(50, 27, 14, 0.85);
+      min-height: 100vh;
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .page-header h1 {
+      font-size: 36px;
+      color: #dbb479;
+    }
+
+    .page-header p {
+      font-size: 18px;
+      color: #fce2bc;
+    }
+
+    .more-section {
+      margin-top: 40px;
+    }
+
+    .more-section h2 {
+      color: #dbb479;
+      margin-bottom: 20px;
+    }
+
+    .topic-box {
+      background-color: #412a14;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .topic-box h3 {
+      color: #dbb479;
+      margin-bottom: 10px;
+    }
+
+    .topic-box p {
+      color: #f9ecd3;
+      font-size: 18px;
+    }
+
+    .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: rgba(50, 27, 14, 0.95);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+    min-width: 160px;
+    }
+
+    .dropdown-menu li {
+    padding: 10px 20px;
+    }
+
+    .dropdown-menu li a {
+    color: #fce2bc;
+    text-decoration: none;
+    display: block;
+    }
+
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    }
+
+    .popup-link {
+      color: #dbb479;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 18px;
+      background-color: #321b0e;
+      font-size: 13px;
+      color: #d1b896;
+    }   
+
+    button a {
+      color: #fce2bc; /* or whatever color you want */
+      text-decoration: none;
+      font-weight: bold;
+      color:#594528 /* optional color */
+    }
+  
+    button a:hover {
+      color: #dbb479; /* optional hover color */
+    }
+  
+    button {
+      background-color: transparent;
+      border: 2px solid #dbb479;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <img src="./images/lgo.png" alt="Logo" class="logo">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sfunctions.html">Functions</a></li>
+        <li><a href="migrations.html">Migration</a></li>
+        <li class="dropdown">
+          <a href="#">Animals</a>
+          <ul class="dropdown-menu">
+            <li><a href="mammals.html"><i data-lucide="paw-print"></i>Mammals</a></li>
+            <li><a href="reptiles.html"><i data-lucide="leaf"></i>Reptiles</a></li>
+            <li><a href="birds.html"><i data-lucide="feather"></i>Birds</a></li>
+            <li><a href="fish.html"><i data-lucide="fish"></i>Fish</a></li>
+          </ul>
+        </li>
+        <button><a href = "more.html">More</a></button>
+    </ul>
+</nav>
+
+  <!-- Main Content -->
+  <main>
+    <header class="page-header">
+      <h1>More Topics to Explore</h1>
+      <p>Dive deeper into related concepts, patterns, and hidden insights behind animal behaviors and math.</p>
+    </header>
+
+    <section class="more-section">
+      <div class="topic-box">
+        <h3>Patterns in Nature</h3>
+        <p>From spirals in seashells to symmetry in butterfly wings, explore how mathematical patterns occur naturally in wildlife.</p>
+      </div>
+
+      <div class="topic-box">
+        <h3>Climate and Ecosystems</h3>
+        <p>Understand how climate zones influence migration, biodiversity, and ecosystem dynamics.</p>
+      </div>
+
+      <div class="topic-box">
+        <h3>Math in Animal Behavior</h3>
+        <p>Discover how animals use instinctual geometry, timing, and paths in their daily habits, travel, and communication.</p>
+      </div>
+
+      <div class="topic-box">
+        <h3>Conservation through Data</h3>
+        <p>Learn how scientists use statistics, tracking, and modeling to protect endangered species and migration corridors.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Math & Migration. All rights reserved.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
