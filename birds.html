@@ -146,7 +146,8 @@
 
     <div class="animal-section">
       <h3>Emperor Penguins</h3>
-      <p><strong>Why do they migrate?</strong> To breed during the harsh Antarctic winter by marching inland to nesting colonies.</p>
+      <p><strong>Why do they migrate?</strong> To reach breeding grounds and to find food in the Antarctic summer.
+      </p>
       <p><strong>Migration Information:</strong> They travel 50–120 km inland, often in large groups, and brave extreme cold for reproduction.</p><strong>
       <a class="popup-link" href="#" onclick="openModal('whaleModal')">Migration Sinusoidal Function</a>
     </div>
@@ -167,21 +168,21 @@
       <a class="popup-link" href="#" onclick="openModal('whaleModal')">Migration Sinusoidal Function</a>
     </div>
 
-    <div id="whaleModal" class="modal">
+    <div id="penguinModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal('whaleModal')">&times;</span>
+        <span class="close" onclick="closeModal('penguinModal')">&times;</span>
         <h4>Sinusoidal Migration of Emperor Penguins</h4>
         <div class="graph-container">
-          <img src="./images/stylish_humpback_graph.png" alt="Humpback Whale Migration Graph" class="side-by-side">
+          <img src="./images/ChatGPT Image Apr 18, 2025, 10_09_10 PM.png" alt="Humpback Whale Migration Graph" class="side-by-side">
           <img src="./images/sinusoidal_migration_path_longitude.png" alt="Humpback Whale Migration Graph" class="side-by-side">
         </div>
         <p class="graph-explanation">
-          The sinusoidal models tracks the latitudinal and longitudinal migration of North Atlantic Humpback Whales throughout the year.  
+          The sinusoidal models tracks the latitudinal and longitudinal migration of Emperor Penguins throughout the year.  
           <br><br>
-          <strong>Latitude Function:</strong> <code>-20cos((π/6)x) + 40</code><br></n>
-          <strong>Longitude Function:</strong> <code>18cos((π/6)x) + 60</code>
+          <strong>Latitude Function:</strong> <code>5cos(((π/6)x)-2) + 40</code><br></n>
+          <strong>Longitude Function:</strong> <code>Varies from colony to colony, but the migration is mainly latitudinal</code>
           <br><br>
-          These equations represent two cycles of annual movement — from breeding grounds in the Caribbean (low latitude, high longitude) to feeding grounds near Greenland (high latitude, low longitude), then back again.
+          Emperor penguins tend to migrate latitudinally, starting in areas like Cape Crozier. During March, they feed at sea, accumulating fat reserves to sustain them during the long winter months when they won't be able to hunt. Then, they start their migration walking to colonies where they will breed.
         </p>
       </div>
     </div>
@@ -217,24 +218,21 @@
       }
     </style>
        
-<!-- ... everything before this stays the same ... -->
-
-    <!-- Wildebeest Modal -->
-    <div id="wildebeestModal" class="modal">
+    <div id="hummingbirdsModal" class="modal">
       <div class="modal-content">
-        <span class="close" onclick="closeModal('wildebeestModal')">&times;</span>
+        <span class="close" onclick="closeModal('hummingbirdsModal')">&times;</span>
         <h4>Sinusoidal Migration of Hummingbirds</h4>
         <div class="graph-container">
           <img src="./images/wildebeestlatitiude.png" alt="Wildebeest Latitude Graph" class="side-by-side">
           <img src="./images/wildebeestlongitiude.png" alt="Wildebeest Longitude Graph" class="side-by-side">
         </div>
         <p class="graph-explanation">
-          The sinusoidal models track the latitudinal and longitudinal migration of the Wildebeest throughout the year.  
+          The sinusoidal models track the latitudinal and longitudinal migration of Ruby-throated hummingbirds throughout the year.  
           <br><br>
           <strong>Latitude Function:</strong> <code>-0.5cos((π/6)x) -2.5</code><br>
           <strong>Longitude Function:</strong> <code>Almost No Change</code>
           <br><br>
-          Wildebeest start the year (x=0) at the Southern Serengeti. They migrate here each year to take advantage of the fresh grass that emerges during the rainy season, which also coincides with the calving season. During the summer season (x=6), they can be seen in the Northern Serengeti, in search of fresh grass and water yet again.
+          Ruby-throated hummingbirds migrate primarily to follow seasonal changes in food availability, seeking nectar and insects as the weather changes in the northern and eastern United States and Canada. They also migrate to escape competition for resources in the tropics. 
         </p>
       </div>
 
