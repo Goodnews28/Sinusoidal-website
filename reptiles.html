@@ -162,6 +162,25 @@ nav li {
       font-size: 16px;
     }
 
+    button a {
+      color: #fce2bc; /* or whatever color you want */
+      text-decoration: none;
+      font-weight: bold;
+      color:#594528 /* optional color */
+    }
+  
+    button a:hover {
+      color: #dbb479; /* optional hover color */
+    }
+  
+    button {
+      background-color: transparent;
+      border: 2px solid #dbb479;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
   </style>
 </head>
 <body>
@@ -180,7 +199,7 @@ nav li {
           <li><a href="fish.html"><i data-lucide="fish"></i>Fish</a></li>
         </ul>
       </li>
-      <button>More</button>
+      <button><a href = "more.html">More</a></button> 
     </ul>
   </nav> 
       
@@ -191,21 +210,21 @@ nav li {
       <h3>Loggerhead Sea Turtle</h3>
       <p><strong>Why do they migrate?</strong> Loggerhead sea turtles migrate primarily to find food, reach breeding grounds, and to navigate to their natal nesting beaches</p>
       <p><strong>Information:</strong> These turtles can travel thousands of miles across oceans using Earth’s magnetic fields to navigate. Migration cycles align with temperature and seasonal currents.</p>
-      <a class="popup-link" href="#" onclick="openModal('logturtleModal')">See the sinusoidal function of their migration</a>
+      <a class="popup-link" href="#" onclick="openModal('logturtleModal')">See The Migration Sinusoidal Function</a>
     </div>
 
     <div class="animal-section">
       <h3>Green Sea Turtle</h3>
       <p><strong>Why do they migrate?</strong> These snakes migrate short distances to find overwintering sites or return to summer habitats.</p>
       <p><strong>Information:</strong> Their movement is influenced by seasonal temperature changes and humidity. They're most active during warmer months.</p>
-      <a class="popup-link" href="#" onclick="openModal('sturtleModal')">See the sinusoidal function of their migration</a>
+      <a class="popup-link" href="#" onclick="openModal('sturtleModal')">See The Migration Sinusoidal Function</a>
     </div>
 
     <div class="animal-section">
       <h3>Mojave Desert Tortoise</h3>
       <p><strong>Why do they migrate?</strong> Desert tortoises migrate between burrows and feeding areas depending on rainfall and food availability.</p>
       <p><strong>Information:</strong> They avoid extreme temperatures by migrating to cooler or shaded regions within their range.</p>
-      <a class="popup-link" href="#" onclick="openModal('tortoiseModal')">See the sinusoidal function of their migration</a>
+      <a class="popup-link" href="#" onclick="openModal('tortoiseModal')">See The Migration Sinusoidal Function</a>
     </div>
 
   <div id="logturtleModal" class="modal">

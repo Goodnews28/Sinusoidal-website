@@ -107,6 +107,25 @@
     .logo {
       width: 100px;
     }
+
+    button a {
+      color: #fce2bc; /* or whatever color you want */
+      text-decoration: none;
+      font-weight: bold;
+      color:#594528 /* optional color */
+    }
+  
+    button a:hover {
+      color: #dbb479; /* optional hover color */
+    }
+  
+    button {
+      background-color: transparent;
+      border: 2px solid #dbb479;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
@@ -125,7 +144,7 @@
               <li><a href="fish.html"><i data-lucide="fish"></i>Fish</a></li>
             </ul>
           </li>
-          <button>More</button>
+          <button><a href = "more.html">More</a></button>
         </ul>
       </nav>  
 
@@ -136,21 +155,21 @@
       <h3>Sockeye Salmon</h3>
       <p><strong>Why do they migrate?</strong> To find food and mature in the ocean, then return to freshwater to spawn.</p>
       <p><strong>Migration Information:</strong> They migrate from the ocean back to rivers and streams, sometimes traveling over 1,000 miles inland.</p>
-      <a class="popup-link" href="#" onclick="openModal('sockeyeModal')">See the sinusoidal function of their migration</a>
+      <a class="popup-link" href="#" onclick="openModal('sockeyeModal')">See The Migration Sinusoidal Function</a>
     </div>
 
     <div class="animal-section">
       <h3>European Eels</h3>
       <p><strong>Why do they migrate?</strong> To reach the Sargasso Sea for breeding.</p>
       <p><strong>Migration Information:</strong> They travel from European rivers to the Atlantic Ocean, crossing thousands of kilometers.</p>
-      <a class="popup-link" href="#" onclick="openModal('eelModal')">See the sinusoidal function of their migration</a>
+      <a class="popup-link" href="#" onclick="openModal('eelModal')">See The Migration Sinusoidal Function</a>
     </div>
 
     <div class="animal-section">
       <h3>Blue Sharks</h3>
       <p><strong>Why do they migrate?</strong> To find food and mate across ocean basins.</p>
       <p><strong>Migration Information:</strong> They undertake long-range open ocean journeys, often crossing entire oceans.</p>
-      <a class="popup-link" href="#" onclick="openModal('sharkModal')">See the sinusoidal function of their migration</a>
+      <a class="popup-link" href="#" onclick="openModal('sharkModal')">See The Migration Sinusoidal Function</a>
     </div>
 
   <div id="sockeyeModal" class="modal">
