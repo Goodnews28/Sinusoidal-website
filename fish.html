@@ -154,21 +154,14 @@
     <div class="animal-section">
       <h3>Sockeye Salmon</h3>
       <p><strong>Why do they migrate?</strong> To find food and mature in the ocean, then return to freshwater to spawn.</p>
-      <p><strong>Migration Information:</strong> They migrate from the ocean back to rivers and streams, sometimes traveling over 1,000 miles inland.</p>
+      <p><strong>Migration Information:</strong> They may imprint on the Earth's magnetic field at their natal river's mouth, aiding their return navigation from the ocean.</p>
       <a class="popup-link" href="#" onclick="openModal('sockeyeModal')">See The Migration Sinusoidal Function</a>
     </div>
 
     <div class="animal-section">
-      <h3>European Eels</h3>
-      <p><strong>Why do they migrate?</strong> To reach the Sargasso Sea for breeding.</p>
-      <p><strong>Migration Information:</strong> They travel from European rivers to the Atlantic Ocean, crossing thousands of kilometers.</p>
-      <a class="popup-link" href="#" onclick="openModal('eelModal')">See The Migration Sinusoidal Function</a>
-    </div>
-
-    <div class="animal-section">
       <h3>Blue Sharks</h3>
-      <p><strong>Why do they migrate?</strong> To find food and mate across ocean basins.</p>
-      <p><strong>Migration Information:</strong> They undertake long-range open ocean journeys, often crossing entire oceans.</p>
+      <p><strong>Why do they migrate?</strong> To follow prey resources and to reach suitable breeding grounds.      </p>
+      <p><strong>Migration Information:</strong> These sharks undertake vast migrations, sometimes covering over 9,000 km (5,600 miles) annually.</p>
       <a class="popup-link" href="#" onclick="openModal('sharkModal')">See The Migration Sinusoidal Function</a>
     </div>
 
@@ -221,56 +214,6 @@
         overflow-wrap: break-word; /* Prevents overflow */
       }
     </style>
-       
-<!-- ... everything before this stays the same ... -->
-
-    <!-- Wildebeest Modal -->
-    <div id="eelModal" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('eelModal')">&times;</span>
-        <h4>Sinusoidal Migration of Hummingbirds</h4>
-        <div class="graph-container">
-          <img src="./images/wildebeestlatitiude.png" alt="Wildebeest Latitude Graph" class="side-by-side">
-          <img src="./images/wildebeestlongitiude.png" alt="Wildebeest Longitude Graph" class="side-by-side">
-        </div>
-        <p class="graph-explanation">
-          The sinusoidal models track the latitudinal and longitudinal migration of the Wildebeest throughout the year.  
-          <br><br>
-          <strong>Latitude Function:</strong> <code>-0.5cos((π/6)x) -2.5</code><br>
-          <strong>Longitude Function:</strong> <code>Almost No Change</code>
-          <br><br>
-          Wildebeest start the year (x=0) at the Southern Serengeti. They migrate here each year to take advantage of the fresh grass that emerges during the rainy season, which also coincides with the calving season. During the summer season (x=6), they can be seen in the Northern Serengeti, in search of fresh grass and water yet again.
-        </p>
-      </div>
-
-      <style>
-        .modal-content {
-          width: 80%;
-          margin: auto;
-          padding: 20px;
-          max-width: 900px;
-          box-sizing: border-box;
-        }
-        .graph-container {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          gap: 20px;
-          margin-bottom: 20px;
-        }
-        .side-by-side {
-          width: 48%;
-          max-width: 400px;
-          height: auto;
-        }
-        .graph-explanation {
-          font-size: 16px;
-          line-height: 1.5;
-          white-space: normal;
-          overflow-wrap: break-word;
-        }
-      </style>
-    </div>
 
     <!-- Elephant Seal Modal -->
     <div id="sharkModal" class="modal">
@@ -278,16 +221,16 @@
         <span class="close" onclick="closeModal('sharkModal')">&times;</span>
         <h4>Sinusoidal Migration of Canada Geese</h4>
         <div class="graph-container">
-          <img src="./images/elephantseallatititude.png" alt="Elephant Seal Latitude Graph" class="side-by-side">
-          <img src="./images/elephantseallongitude.png" alt="Elephant Seal Longitude Graph" class="side-by-side">
+          <img src="./images/sharklat.png" alt="Elephant Seal Latitude Graph" class="side-by-side">
+          <img src="./images/shrklon.png" alt="Elephant Seal Longitude Graph" class="side-by-side">
         </div>
         <p class="graph-explanation">
-          The sinusoidal models track the latitudinal and longitudinal migration of the Northern Elephant Seals throughout the year.  
+          The sinusoidal models track the latitudinal and longitudinal migration of Blue Sharks throughout the year.  
           <br><br>
           <strong>Latitude Function:</strong> <code>-9cos((π/3)x) + 46</code><br>
           <strong>Longitude Function:</strong> <code>-11.5cos((π/3)x) + 133.5</code>
           <br><br>
-          They begin their year near Piedras Blancas, California for breeding. Males then travel to the Gulf of Alaska to forage, then return to molt. They feed again in the fall and return in winter for the next breeding season.
+          Blue sharks start the year off in warmer areas due to the nice climate and accessibility to resources. As summer rolls around however, they migrate to cooler areas such as New England. Here, the mating season begins. After mating season is over, the sharks will return to the warmer climates in areas like the Canary Islands by the end of the year, just in time for pups to be born.
         </p>
       </div>
 

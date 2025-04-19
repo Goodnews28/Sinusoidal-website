@@ -220,12 +220,6 @@ nav li {
       <a class="popup-link" href="#" onclick="openModal('sturtleModal')">See The Migration Sinusoidal Function</a>
     </div>
 
-    <div class="animal-section">
-      <h3>Mojave Desert Tortoise</h3>
-      <p><strong>Why do they migrate?</strong> Desert tortoises migrate between burrows and feeding areas depending on rainfall and food availability.</p>
-      <p><strong>Information:</strong> They avoid extreme temperatures by migrating to cooler or shaded regions within their range.</p>
-      <a class="popup-link" href="#" onclick="openModal('tortoiseModal')">See The Migration Sinusoidal Function</a>
-    </div>
 
   <div id="logturtleModal" class="modal">
       <div class="modal-content">
@@ -324,53 +318,7 @@ nav li {
         }
       </style>
     </div>
-
-    
-    <div id="sealModal" class="modal">
-      <div class="modal-content">
-        <span class="close" onclick="closeModal('sealModal')">&times;</span>
-        <h4>Sinusoidal Migration of Canada Geese</h4>
-        <div class="graph-container">
-          <img src="./images/elephantseallatititude.png" alt="Elephant Seal Latitude Graph" class="side-by-side">
-          <img src="./images/elephantseallongitude.png" alt="Elephant Seal Longitude Graph" class="side-by-side">
-        </div>
-        <p class="graph-explanation">
-          The sinusoidal models track the latitudinal and longitudinal migration of the Northern Elephant Seals throughout the year.  
-          <br><br>
-          <strong>Latitude Function:</strong> <code>-9cos((π/3)x) + 46</code><br>
-          <strong>Longitude Function:</strong> <code>-11.5cos((π/3)x) + 133.5</code>
-          <br><br>
-          They begin their year near Piedras Blancas, California for breeding. Males then travel to the Gulf of Alaska to forage, then return to molt. They feed again in the fall and return in winter for the next breeding season.
-        </p>
-      </div>
-
-      <style>
-        .modal-content {
-          width: 80%;
-          margin: auto;
-          padding: 20px;
-          max-width: 900px;
-          box-sizing: border-box;
-        }
-        .graph-container {
-          display: flex;
-          justify-content: space-between;
-          flex-wrap: wrap;
-          gap: 20px;
-          margin-bottom: 20px;
-        }
-        .side-by-side {
-          width: 48%;
-          max-width: 400px;
-          height: auto;
-        }
-        .graph-explanation {
-          font-size: 16px;
-          line-height: 1.5;
-          white-space: normal;
-          overflow-wrap: break-word;
-        }
-      </style>
+      
     </div>
 
   </div> <!-- End of .container -->
