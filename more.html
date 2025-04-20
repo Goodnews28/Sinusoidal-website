@@ -6,7 +6,7 @@
   <title>More Topics | Math n' Migration</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     * {
       box-sizing: border-box;
@@ -16,10 +16,9 @@
     }
 
     body {
-      background: url('./images/ChatGPT Image Apr 9, 2025, 06_01_32 PM.png') no-repeat center center;
-      background-size: cover;
-      font-family: 'Poppins', sans-serif;
+      background: #1d1209;
       color: #fce2bc;
+      line-height: 1.6;
     }
 
     nav {
@@ -39,6 +38,7 @@
       display: flex;
       gap: 25px;
       list-style: none;
+      align-items: center;
     }
 
     nav ul li a {
@@ -54,97 +54,95 @@
 
     nav button {
       padding: 8px 20px;
-      background-color: #e9d5b5;
-      border: none;
-      font-weight: bold;
-      border-radius: 6px;
+      background-color: #dbb479;
+      border: 2px solid #dbb479;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background 0.2s;
+    }
+
+    nav button a {
+      color: #2c1a0f;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     nav button:hover {
       background-color: #d6bfa4;
     }
 
-    main {
-      padding: 60px 10%;
-      background-color: rgba(50, 27, 14, 0.85);
-      min-height: 100vh;
-    }
-
-    .page-header {
+    .quote-hero {
+      background-color: #2c1a0f;
+      padding: 10px 0px;
       text-align: center;
-      margin-bottom: 40px;
+      border-top: 1.5px solid#dbb479;
+      border-bottom: 1.5px solid #dbb479;
     }
 
-    .page-header h1 {
-      font-size: 36px;
-      color: #dbb479;
-    }
-
-    .page-header p {
-      font-size: 18px;
+    .quote-hero p {
+      font-size: 24px;
+      font-style: italic;
       color: #fce2bc;
+      max-width: 800px;
+      margin: 0 auto;
     }
 
-    .more-section {
-      margin-top: 40px;
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      padding: 60px 10%;
     }
 
-    .more-section h2 {
+    .left-column {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .right-column {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .left-column h1 {
       color: #dbb479;
+      font-size: 36px;
       margin-bottom: 20px;
     }
 
-    .topic-box {
+    .left-column p {
+      font-size: 16px;
+      color: #fce2bc;
+      margin-bottom: 40px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
       background-color: #412a14;
       padding: 20px;
       border-radius: 12px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .topic-box h3 {
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+    }
+
+    .card h3 {
       color: #dbb479;
       margin-bottom: 10px;
+      font-size: 20px;
     }
 
-    .topic-box p {
+    .card p {
+      font-size: 15px;
       color: #f9ecd3;
-      font-size: 18px;
-    }
-
-    .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: rgba(50, 27, 14, 0.95);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    padding: 10px 0;
-    margin-top: 10px;
-    border-radius: 8px;
-    z-index: 1000;
-    min-width: 160px;
-    }
-
-    .dropdown-menu li {
-    padding: 10px 20px;
-    }
-
-    .dropdown-menu li a {
-    color: #fce2bc;
-    text-decoration: none;
-    display: block;
-    }
-
-    .dropdown:hover .dropdown-menu {
-    display: block;
-    }
-
-    .popup-link {
-      color: #dbb479;
-      text-decoration: none;
-      font-weight: bold;
-      cursor: pointer;
     }
 
     .footer {
@@ -153,79 +151,128 @@
       background-color: #321b0e;
       font-size: 13px;
       color: #d1b896;
-    }   
-
-    button a {
-      color: #fce2bc; /* or whatever color you want */
-      text-decoration: none;
-      font-weight: bold;
-      color:#594528 /* optional color */
-    }
-  
-    button a:hover {
-      color: #dbb479; /* optional hover color */
-    }
-  
-    button {
-      background-color: transparent;
-      border: 2px solid #dbb479;
-      padding: 8px 16px;
-      border-radius: 8px;
-      cursor: pointer;
     }
 
+    .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(50, 27, 14, 0.95);
+  min-width: 160px;
+  z-index: 1;
+  border: 1px solid #dbb479;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.dropdown-content li {
+  display: block;
+  padding: 10px;
+}
+
+.dropdown-content li a {
+  color: #fce2bc;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: #dbb479;
+  color: #321b0e;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
+
   <!-- Navigation -->
   <nav>
-    <img src="./images/lgo.png" alt="Logo" class="logo">
+    <img src="./images/lgo.png" alt="Logo" class="logo" />
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sfunctions.html">Functions</a></li>
-        <li><a href="migrations.html">Migration</a></li>
-        <li class="dropdown">
-          <a href="#">Animals</a>
-          <ul class="dropdown-menu">
-            <li><a href="mammals.html"><i data-lucide="paw-print"></i>Mammals</a></li>
-            <li><a href="reptiles.html"><i data-lucide="leaf"></i>Reptiles</a></li>
-            <li><a href="birds.html"><i data-lucide="feather"></i>Birds</a></li>
-            <li><a href="fish.html"><i data-lucide="fish"></i>Fish</a></li>
-          </ul>
-        </li>
-        <button><a href = "more.html">More</a></button>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sfunctions.html">Functions</a></li>
+      <li><a href="migrations.html">Migration</a></li>
+      <li class="dropdown">
+        <a href="#">Animals</a>
+        <ul class="dropdown-content">
+          <li><a href="mammals.html"><i data-lucide="paw-print"></i> Mammals</a></li>
+          <li><a href="reptiles.html"><i data-lucide="leaf"></i> Reptiles</a></li>
+          <li><a href="birds.html"><i data-lucide="feather"></i> Birds</a></li>
+          <li><a href="fish.html"><i data-lucide="fish"></i> Fish</a></li>
+        </ul>
+      </li>
+      <button><a href="more.html">More</a></button>
     </ul>
-</nav>
+  </nav>
+
+  <!-- Quote Hero -->
+  <section class="quote-hero">
+    <p>“Mathematics is the language with which God has written the universe.” — Galileo Galilei</p>
+  </section>
 
   <!-- Main Content -->
-  <main>
-    <header class="page-header">
-      <h1>More Topics to Explore</h1>
-      <p>Dive deeper into related concepts, patterns, and hidden insights behind animal behaviors and math.</p>
-    </header>
-
-    <section class="more-section">
-      <div class="topic-box">
-        <h3>Patterns in Nature</h3>
-        <p>From spirals in seashells to symmetry in butterfly wings, explore how mathematical patterns occur naturally in wildlife.</p>
+  <div class="container">
+    <div class="left-column">
+      <h1>Behind the Scenes</h1>
+      <p>There’s a lot going on behind the scenes—ideas, research, and a love for both nature and numbers. This project shows how math helps us make sense of the world around us, especially the amazing ways animals move and adapt.</p>
+    </div>
+    <div class="right-column">
+      <div class="card-grid">
+        <div class="card">
+          <h3>Math n' Migration</h3>
+          <p>A student-created site that blends enviromental science and math to uncover the secrets behind animal migration using graphs and data.</p>
+        </div>
+        <div class="card">
+          <h3>Created By</h3>
+          <p>This project was created by <strong>Aleena Haidri</strong> and <strong>Goodnews Babade</strong> as a collaborative project to make science more visual, creative, and accessible
+        </div>
+        <div class="card">
+          <h3>Why We Made It</h3>
+          <p>To inspire curiosity and show how math explains everything from bird flights to global movement patterns.</p>
+        </div>
+        <div class="card">
+          <h3>Research & Sources</h3>
+            <p>To inspire curiosity and show how math explains everything from bird flights to global movement patterns.</p>
+          </div></p>
+        </div>
       </div>
+    </div>
+  </div>
 
-      <div class="topic-box">
-        <h3>Climate and Ecosystems</h3>
-        <p>Understand how climate zones influence migration, biodiversity, and ecosystem dynamics.</p>
+  <div class="container">
+    <div class="left-column">
+      <h1>More Topics</h1>
+      <p>From animal instincts to climate cycles, math is the hidden thread that helps us understand nature's logic. Learn how data, patterns, and movement shape the natural world and its migrations.</p>
+    </div>
+    <div class="right-column">
+      <div class="card-grid">
+        <div class="card">
+          <h3>Patterns in Nature</h3>
+          <p>Explore spirals, symmetry, fractals, and other shapes that occur naturally and follow mathematical rules.</p>
+        </div>
+        <div class="card">
+          <h3>Climate & Ecosystems</h3>
+          <p>See how climate zones and shifting temperatures impact species migration across regions.</p>
+        </div>
+        <div class="card">
+          <h3>Math in Behavior</h3>
+          <p>Understand how math explains foraging, flocking, and navigational instincts in animals.</p>
+        </div>
+        <div class="card">
+          <h3>Conservation Tools</h3>
+          <p>Learn how math helps scientists track, protect, and predict migration patterns using data models.</p>
+        </div>
       </div>
-
-      <div class="topic-box">
-        <h3>Math in Animal Behavior</h3>
-        <p>Discover how animals use instinctual geometry, timing, and paths in their daily habits, travel, and communication.</p>
-      </div>
-
-      <div class="topic-box">
-        <h3>Conservation through Data</h3>
-        <p>Learn how scientists use statistics, tracking, and modeling to protect endangered species and migration corridors.</p>
-      </div>
-    </section>
-  </main>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="footer">
