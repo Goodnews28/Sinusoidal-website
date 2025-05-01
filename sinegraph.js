@@ -50,8 +50,8 @@ function drawAxes() {
   // labels
   ctx.fillStyle = '#321b0e';
   ctx.font = '16px Montserrat';
-  ctx.fillText('y(t)', 10, 30);
-  ctx.fillText('t', width - 20, centerY + 20);
+  ctx.fillText('Latitude/Longitude', 10, 30);
+  ctx.fillText('Time', width - 20, centerY + 20);
 }
 
 function drawSine(amplitude, frequency) {
