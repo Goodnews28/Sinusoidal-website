@@ -51,7 +51,7 @@ function drawAxes() {
   ctx.fillStyle = '#321b0e';
   ctx.font = '16px Montserrat';
   ctx.fillText('Latitude/Longitude', 10, 30);
-  ctx.fillText('Time', width - 20, centerY + 20);
+  ctx.fillText('X', width - 20, centerY + 20);
 }
 
 function drawSine(amplitude, frequency) {
